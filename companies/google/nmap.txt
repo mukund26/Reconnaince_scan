@@ -1,0 +1,15 @@
+
+Starting Nmap 7.01 ( https://nmap.org ) at 2017-08-10 21:53 IST
+Stats: 0:00:00 elapsed; 0 hosts completed (0 up), 0 undergoing Host Discovery
+Parallel DNS resolution of 1 host. Timing: About 0.00% done
+Nmap scan report for bom05s09-in-f14.1e100.net (172.217.26.238)
+Host is up (0.075s latency).
+Not shown: 95 filtered ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+443/tcp  open  https
+554/tcp  open  rtsp
+1723/tcp open  pptp
+
+Nmap done: 1 IP address (1 host up) scanned in 3.49 seconds
