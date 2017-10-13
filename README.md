@@ -1,4 +1,4 @@
-# Reconnaince_scan
+# Reconnaince_Scanner
 
 
 "Python Reconnaissance Scanner" can be used to scan any website that is live over internet and it can provide you with very useful information. 
