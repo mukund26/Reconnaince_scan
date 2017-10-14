@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from general import *
-#from domain import *
+from domain import *
 from scanrobot import *
 from ip_address import *
 from whois import *
-#import pd.
+#import pdb
 from nmap import *
 import fileinput
 import glob
@@ -30,7 +30,7 @@ def create_report(name,url,domain_name,nmap,robots_txt,whois):
 	write_file(project_dir + '/whois.txt',whois)
 	all_files = glob.glob("*.txt")
 	# added the code to read the content of each file into output file
-	with open(`result.txt`, `w`) as file:
+	with open('result.txt', 'w') as file:
 		input_lines = fileinput.input(all_files)
 		file.writelines(input_lines)
 
