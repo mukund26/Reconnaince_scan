@@ -23,16 +23,18 @@ def gather_info(name, url):
 def create_report(name,url,domain_name,nmap,robots_txt,whois):
 	project_dir = ROOT_DIR + '/'+name
 	create_dir(project_dir)
-	write_file(project_dir + '/full_url.txt',url)
-	write_file(project_dir + '/domain_name.txt',domain_name)
-	write_file(project_dir + '/nmap.txt',nmap)
-	write_file(project_dir + '/robots.txt',robots_txt)
-	write_file(project_dir + '/whois.txt',whois)
-	all_files = glob.glob("*.txt")
+	recon_data = '[*] URL: ' + url + '\n' + '[*] Domain: ' + domain_name + '\n' + '[*] NMAP: ' + nmap + '\n' +  '[*] Robots Txt: ' + robots_txt + '\n' +  '[*] WHOIS: ' + whois
+	rite_file(project_dir + '/recon_data.txt',recon_data)
+	# write_file(project_dir + '/full_url.txt',url)
+	# write_file(project_dir + '/domain_name.txt',domain_name)
+	# write_file(project_dir + '/nmap.txt',nmap)
+	# write_file(project_dir + '/robots.txt',robots_txt)
+	# write_file(project_dir + '/whois.txt',whois)
+	#all_files = glob.glob("*.txt")
 	# added the code to read the content of each file into output file
-	with open('result.txt', 'w') as file:
-		input_lines = fileinput.input(all_files)
-		file.writelines(input_lines)
+	#with open('result.txt', 'w') as file:
+		#input_lines = fileinput.input(all_files)
+		#file.writelines(input_lines)
 
 s=str(raw_input('Enter name'))
 u=str(raw_input('Enter url'))
