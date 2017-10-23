@@ -15,10 +15,19 @@ This information includes =>
 
 5) Robots_txt
 
+----
 ![Reconnaissance Screenshot](https://raw.githubusercontent.com/mukund26/Reconnaince_scan/master/recon.gif "Reconnaissance Screenshot")
 
+----
+##### To install the 'tld' dependency:
+``` shell
+$ virtualenv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+```
+----
+##### Usage
 ```shell
-# Usage
 $ python reconnaince.py
 Enter name (e.g. reddit): reddit
 Enter url (e.g. https://www.reddit.com): https://www.reddit.com
