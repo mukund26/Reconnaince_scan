@@ -36,10 +36,9 @@ def create_report(name,url,domain_name,nmap,robots_txt,whois):
 		#input_lines = fileinput.input(all_files)
 		#file.writelines(input_lines)
 
-s=str(raw_input('Enter name'))
-u=str(raw_input('Enter url'))
+s=str(raw_input('Enter name (e.g. reddit): '))
+u=str(raw_input('Enter url (e.g. https://www.reddit.com): '))
 gather_info(s,u)
 
 print('Scan completed')
-
 
