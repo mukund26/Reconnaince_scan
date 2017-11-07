@@ -32,6 +32,6 @@ $ python reconnaince.py
 Enter name (e.g. reddit): reddit
 Enter url (e.g. https://www.reddit.com): https://www.reddit.com
 Scan completed
-$
+
 ```
 
